@@ -6,26 +6,28 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Nicholas Loong - nicholasloongkahfai@gmail.com" />
 	<title>My-Portfolio</title>
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 
 <body style="margin: 0px; font-family:Garamond">
-	<!--Top Navigation Bar-->
-	<table id="header" border="0" style="border-color: #64FFDA" width="100%"
-		   bgcolor="#0A192F" cellpadding="15" align="center" cellspacing="0">
+	<!--Header-->
+	<table id="header" border="0" width="100%"
+		   bgcolor="#0A192F" cellpadding="15" cellspacing="0">
 		<tr>
 			<td></td>
 
 			<td>
-				<strong style="font-size: 36px; color: #8892B0">My Portfolio</strong>
+				<strong id="navBarTitle">My Portfolio</strong>
 			</td>
 
 			<td width="5%"></td>
 
 			<!--Home-->
 			<td align="center">
-				<a href="#home" style="text-decoration:none">
-					<strong style="font-size: 30px; color: #8892B0">Home</strong>
+				<a href="#home">
+					<strong id="navBarOptions">Home</strong>
 				</a>
 			</td>
 
@@ -35,8 +37,8 @@
 
 			<!--Skills-->
 			<td align="center">
-				<a href="#skills" style="text-decoration:none">
-					<strong style="font-size: 30px; color: #8892B0">Skills</strong>
+				<a href="#skills">
+					<strong id="navBarOptions">Skills</strong>
 				</a>
 			</td>
 
@@ -46,8 +48,8 @@
 
 			<!--Home-->
 			<td align="center">
-				<a href="#projects" style="text-decoration:none">
-					<strong style="font-size: 30px; color: #8892B0 ">Projects</strong>
+				<a href="#projects">
+					<strong id="navBarOptions">Projects</strong>
 				</a>
 			</td>
 
@@ -57,31 +59,28 @@
 
 			<!--Home-->
 			<td align="center">
-				<a href="#contact" style="text-decoration:none">
-					<strong style="font-size: 30px; color: #8892B0 ">Contact</strong>
+				<a href="#contact">
+					<strong id="navBarOptions">Contact</strong>
 				</a>
 			</td>
 		</tr>
 	</table>
 
-	<div style="height: 5px; background-color: #2F3680"></div>
+	<div id="edgeDivider"></div>
 
 	<!--Home-->
-	<table id="home" width="100%" align="center"
-		   cellpadding="15" cellspacing="0" bgcolor="#0A192F">
+	<table id="home" cellpadding="15" cellspacing="0">
 		<tr>
-			<td align="center" colspan="2"
-				style="vertical-align: middle; color: #CCD6F6; font-size: 50px;">
-				<h3>About Me</h3>
+			<td colspan="2">
+				<h3 id="sectionTitle">About Me</h3>
 				<hr color="#CCD6F6" width="90">
 			</td>
 		</tr>
 		<tr>
 			<td width="40%">
-				<img style="display: block" width="100%" height="100%"
-					 src="Assets/profilePicture.jpeg" alt="profile picture">
+				<img src="Assets/profilePicture.jpeg" alt="profile picture">
 			</td>
-			<td width="60%" style="color: #8892B0; font-size: 30px;">
+			<td width="60%">
 				<span>
 					Hello there, Welcome to my first personal website!
 				</span>
@@ -96,7 +95,7 @@
 					Currently, I'm a Malaysia-based Software Engineer working at
 					<strong style="color: #64FFDA">
 						<a href="https://www.healthmetrics.com"
-						   style="text-decoration: none; color: #64FFDA">
+						   style="color: #64FFDA">
 							HealthMetrics
 						</a>
 					</strong>
@@ -112,23 +111,20 @@
 		</tr>
 	</table>
 
-	<div style="height: 5px; background-color: #64FFDA"></div>
+	<div id="sectionDivider"></div>
 
 	<!--Development Skills-->
-	<table id="skills" border="0" width="100%"
-		   cellpadding="0" cellspacing="0" bgcolor="#0A192F">
+	<table id="skills" cellpadding="15" cellspacing="0">
 		<tr>
-			<td align="center" colspan="2"
-				style="vertical-align: middle; color: #CCD6F6; font-size: 50px;">
-				<h3>Development Skills</h3>
+			<td colspan="2">
+				<h3 id="sectionTitle">Development Skills</h3>
 				<hr color="#CCD6F6" width="300">
 			</td>
 		</tr>
 		<tr height="25"></tr>
-		<tr></tr>
 		<tr>
 			<td align="center">
-				<table width="90%" style="font-size: 30px; color: #8892B0; margin: 0px">
+				<table width="90%" style="margin: 0px">
 					<thead color="white">
 						<tr style="padding: 10px;">
 							<th width="30%">Frameworks</th>
@@ -150,13 +146,13 @@
 					<tbody>
 						<tr align="center">
 							<td>
-								<ul style="line-height: 70px; list-style-type: none; padding:0">
+								<ul>
 									<li>AngularJS</li>
 									<li>ASP.NET</li>
 								</ul>
 							</td>
 							<td>
-								<ul style="line-height: 70px; list-style-type: none; padding: 0">
+								<ul>
 									<li>C#</li>
 									<li>CSS</li>
 									<li>HTML</li>
@@ -165,7 +161,7 @@
 								</ul>
 							</td>
 							<td>
-								<ul style="line-height: 70px; list-style-type: none; padding: 0">
+								<ul>
 									<li>MSSQL</li>
 								</ul>
 							</td>
@@ -177,56 +173,48 @@
 		</tr>
 	</table>
 
-	<div style="height: 5px; background-color: #64FFDA"></div>
+	<div id="sectionDivider"></div>
 
 	<!--Projects-->
-	<table id="projects" border="0" width="100%"
-		   cellpadding="0" cellspacing="0" bgcolor="#0A192F" ">
+	<table id="projects" cellpadding="15" cellspacing="0">
 		<tr>
-			<td align="center" colspan="2"
-				style="vertical-align: middle; color: #CCD6F6; font-size: 50px;">
-				<h3>Projects</h3>
+			<td colspan="2">
+				<h3 id="sectionTitle">Projects</h3>
 				<hr color="#CCD6F6" width="300">
 			</td>
 		</tr>
 
 		<tr>
-			<td align="center" colspan="2"
-				style="vertical-align: middle; color: #CCD6F6; font-size: 50px;">
+			<td id="filler" align="center" colspan="2">
 				<h4>Something exciting is on the way...</h4>
 				<h4>Stay tuned!</h4>
 			</td>
 		</tr>
 	</table>
 
-	<div style="height: 5px; background-color: #64FFDA"></div>
+	<div id="sectionDivider"></div>
 
 	<!--Contact-->
-	<table id="contact" border="0" width="100%"
-		   cellpadding="0" cellspacing="0" bgcolor="#0A192F">
+	<table id="contact" cellpadding="15" cellspacing="0">
 		<tr>
-			<td align="center" colspan="2"
-				style="vertical-align: middle; color: #CCD6F6; font-size: 50px;">
-				<h3>Contact Me</h3>
+			<td colspan="2">
+				<h3 id="sectionTitle">Contact Me</h3>
 				<hr color="#CCD6F6" width="300">
 			</td>
 		</tr>
 		<tr>
-			<td align="center" style="color: #8892B0; font-size: 30px;">
+			<td align="center">
 				<span>
 					Interested in collaborating or just dropping by to say hi?
 				</span>
 			</td>
 		</tr>
 		<tr>
-			<td align="center" style="color: #8892B0; font-size: 30px;">
+			<td align="center">
 				<span>
 					Leave a message below!
 				</span>
 			</td>
-		</tr>
-		<tr>
-			<td height="30px;"></td>
 		</tr>
 		<tr>
 			<td>
@@ -234,30 +222,34 @@
 					<table width="100%">
 						<tr>
 							<td width="35%"></td>
-							<td width="15%" style="color: #8892B0; font-size: 30px;"
-								align="center">
+
+							<td width="15%" align="center">
 								<span>Name</span>
 							</td>
+
 							<td width="25%" align="left">
-								<input type="text" size="25%" style="font-size: 20px;" />
+								<input type="text" size="25%" />
 							</td>
+
 							<td width="30%"></td>
 						</tr>
 						<tr>
 							<td width="30%"></td>
-							<td width="15%" style="color: #8892B0; font-size: 30px;"
-								align="center">
+							
+							<td width="15%" align="center">
 								<span>Email</span>
 							</td>
+							
 							<td width="25%" align="left">
-								<input type="text" size="25%" style="font-size: 20px;" />
+								<input type="text" size="25%" />
 							</td>
+							
 							<td width="30%"></td>
 						</tr>
 						<tr>
 							<td width="30%"></td>
-							<td width="15%" style="color: #8892B0; font-size: 30px;"
-								align="center">
+							
+							<td width="15%" align="center">
 								<span>Message</span>
 							</td>
 							<td width="25%" align="center">
@@ -269,36 +261,38 @@
 				</form>
 			</td>
 		</tr>
-		<tr>
-			<td height="30px;"></td>
-		</tr>
 	</table>
 
-	<div style="height: 5px; background-color: #2F3680"></div>
+	<div id="edgeDivider"></div>
 
 	<!--Footer-->
 	<table id="footer" border="0" width="100%"
 		   cellpadding="0" cellspacing="0" bgcolor="0A192F">
-		<tr style="font-size: 20px; color: #CCD6F6">
+		<tr>
 			<td width="80%" valign="top">
 				<strong>Inspiration:</strong>
 			</td>
 		</tr>
-		<tr style="font-size: 20px; color: #CCD6F6">
+		<tr>
 			<td valign="top">
 				<span>
 					<strong>Design:</strong>
 					<a href="https://www.geeksforgeeks.org/simple-portfolio-website-design-using-html/"
-					   style="text-decoration: none; color: #64FFDA">GeeksForGeeks</a>
+					   style="color: #64FFDA">
+						GeeksForGeeks
+					</a>
 				</span>
-				<strong style="color: 0A192F ">            |          </strong>
+				<strong style="color: #64FFDA">            |          </strong>
 				<span>
 					<strong>Colours:</strong>
-					<a href="https://chandrikadeb7.github.io/#contact"
-					   style="text-decoration: none; color: #64FFDA">Chandrika Deb</a>
+					<a href="https://chandrikadeb7.github.io/#contact" 
+					   style="color: #64FFDA">
+						Chandrika Deb
+					</a>
 					<span>,  </span>
-					<a href="https://brittanychiang.com/"
-					   style="text-decoration: none; color: #64FFDA">Brittany Chiang</a>
+					<a href="https://brittanychiang.com/" style="color: #64FFDA">
+						Brittany Chiang
+					</a>
 				</span>
 			</td>
 		</tr>
