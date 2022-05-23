@@ -218,7 +218,7 @@
 		</tr>
 		<tr>
 			<td>
-				<form>
+				<form action="https://formspree.io/f/moqrrvev" method="POST">
 					<table width="100%">
 						<tr>
 							<td width="35%"></td>
@@ -228,36 +228,43 @@
 							</td>
 
 							<td width="25%" align="left">
-								<input type="text" size="25%" />
+								<input name="name" type="text"
+									   size="25%" required />
 							</td>
 
 							<td width="30%"></td>
 						</tr>
 						<tr>
 							<td width="30%"></td>
-							
+
 							<td width="15%" align="center">
 								<span>Email</span>
 							</td>
-							
+
 							<td width="25%" align="left">
-								<input type="text" size="25%" />
+								<input name="email" type="email"
+									   size="25%" required />
 							</td>
-							
+
 							<td width="30%"></td>
 						</tr>
 						<tr>
 							<td width="30%"></td>
-							
+
 							<td width="15%" align="center">
 								<span>Message</span>
 							</td>
 							<td width="25%" align="center">
-								<textarea type="text" size="100%" rows="6" cols="40" style="font-size: 20px; padding: 0px;"></textarea>
+								<textarea name="message" type="text" size="100%" rows="6" cols="40"
+										  style="font-size: 20px; padding: 0px;"
+										  required>
+								</textarea>
 							</td>
 							<td width="30%"></td>
 						</tr>
 					</table>
+					<div style="color: #0A192F; height: 29px;"></div>
+					<button type="submit">Submit</button>
 				</form>
 			</td>
 		</tr>
