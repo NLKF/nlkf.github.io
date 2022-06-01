@@ -1,4 +1,5 @@
-﻿a 
+﻿/*#region Specific Types*/
+a 
 {
     text-decoration: none;
 }
@@ -40,10 +41,27 @@ button {
     color: #64FFDA;
     font-size: 20px;
 }
+/*#endregion Specific Types*/
 
-#home,  #skills, #projects, #contact
-{
-    width:100%;
+/*#region Ids*/
+
+
+
+#navBarTitle {
+    font-size: 36px;
+    color: white;
+}
+
+#filler {
+    vertical-align: middle;
+    color: #8892B0;
+    font-size: 40px;
+}
+/*#endregion Ids*/
+
+/*#region Classes*/
+.section {
+    width: 100%;
     text-align: center;
     background-color: #0A192F;
     padding: 5px;
@@ -52,47 +70,21 @@ button {
     padding-bottom: 60px;
 }
 
-#footer {
-    font-size: 20px;
-    color: #CCD6F6
-}
-
-#navBarTitle {
-    font-size: 36px;
-    color: white;
-}
-
-#navBarOptions {
-    font-size: 30px; 
-    color: #8892B0;
-}
-
-#edgeDivider {
-    height: 5px;
-    background-color: #2F3680;
-}
-
-#sectionDivider {
-    height: 5px;
-    background-color: #64FFDA;
-}
-
-#sectionTitle {
+.sectionTitle {
     vertical-align: middle;
     color: #CCD6F6;
     font-size: 40px;
     text-align: center;
 }
 
-#filler {
-    vertical-align: middle;
-    color: #8892B0;
-    font-size: 40px;
+.edgeDivider {
+    height: 5px;
+    background-color: #2F3680;
 }
 
-.static{
-    position: fixed;
-    top: 0;
+.sectionDivider {
+    height: 5px;
+    background-color: #64FFDA;
 }
 
 .header {
@@ -102,3 +94,29 @@ button {
     padding: 15px;
     border-spacing: 0px;
 }
+
+.footer {
+    font-size: 20px;
+    color: #CCD6F6;
+    padding: 0px;
+    border-spacing: 0px;
+    border: 0px;
+    width: 100%;
+    background-color: #0A192F;
+}
+
+.static {
+    position: fixed;
+    top: 0;
+}
+
+.navBarOptions {
+    font-size: 30px;
+    color: #8892B0;
+}
+
+.navBarOptions:hover{
+    color: white;
+}
+
+/*#endregion Classes*/
