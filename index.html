@@ -8,68 +8,74 @@
 	<title>My-Portfolio</title>
 
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="js/index.js"></script>
 </head>
 
 
 <body style="margin: 0px; font-family:Garamond">
 	<!--Header-->
-	<table id="header" border="0" width="100%"
-		   bgcolor="#0A192F" cellpadding="15" cellspacing="0">
-		<tr>
-			<td></td>
+	<table id="header" class="header">
+		<tbody>
+			<tr>
+				<td></td>
 
-			<td>
-				<strong id="navBarTitle">My Portfolio</strong>
-			</td>
+				<td>
+					<strong id="navBarTitle">My Portfolio</strong>
+				</td>
 
-			<td width="5%"></td>
+				<td width="5%"></td>
 
-			<!--Home-->
-			<td align="center">
-				<a href="#home">
-					<strong id="navBarOptions">Home</strong>
-				</a>
-			</td>
+				<!--Home-->
+				<td align="center">
+					<a href="#home">
+						<strong id="navBarOptions">Home</strong>
+					</a>
+				</td>
 
-			<td>
-				<strong style="color: #64FFDA ">|</strong>
-			</td>
+				<td>
+					<strong style="color: #64FFDA ">|</strong>
+				</td>
 
-			<!--Skills-->
-			<td align="center">
-				<a href="#skills">
-					<strong id="navBarOptions">Skills</strong>
-				</a>
-			</td>
+				<!--Skills-->
+				<td align="center">
+					<a href="#skills">
+						<strong id="navBarOptions">Skills</strong>
+					</a>
+				</td>
 
-			<td>
-				<strong style="color: #64FFDA ">|</strong>
-			</td>
+				<td>
+					<strong style="color: #64FFDA ">|</strong>
+				</td>
 
-			<!--Home-->
-			<td align="center">
-				<a href="#projects">
-					<strong id="navBarOptions">Projects</strong>
-				</a>
-			</td>
+				<!--Home-->
+				<td align="center">
+					<a href="#projects">
+						<strong id="navBarOptions">Projects</strong>
+					</a>
+				</td>
 
-			<td>
-				<strong style="color: #64FFDA ">|</strong>
-			</td>
+				<td>
+					<strong style="color: #64FFDA ">|</strong>
+				</td>
 
-			<!--Home-->
-			<td align="center">
-				<a href="#contact">
-					<strong id="navBarOptions">Contact</strong>
-				</a>
-			</td>
-		</tr>
+				<!--Home-->
+				<td align="center">
+					<a href="#contact">
+						<strong id="navBarOptions">Contact</strong>
+					</a>
+				</td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr >
+				<td id="edgeDivider" colspan="10">
+				</td>
+			</tr>
+		</tbody>
 	</table>
 
-	<div id="edgeDivider"></div>
-
 	<!--Home-->
-	<table id="home" cellpadding="15" cellspacing="0">
+	<table id="home" style="padding: 0px">
 		<tr>
 			<td colspan="2">
 				<h3 id="sectionTitle">About Me</h3>
@@ -114,7 +120,7 @@
 	<div id="sectionDivider"></div>
 
 	<!--Development Skills-->
-	<table id="skills" cellpadding="15" cellspacing="0">
+	<table id="skills">
 		<tr>
 			<td colspan="2">
 				<h3 id="sectionTitle">Development Skills</h3>
@@ -176,7 +182,7 @@
 	<div id="sectionDivider"></div>
 
 	<!--Projects-->
-	<table id="projects" cellpadding="15" cellspacing="0">
+	<table id="projects">
 		<tr>
 			<td colspan="2">
 				<h3 id="sectionTitle">Projects</h3>
@@ -195,7 +201,7 @@
 	<div id="sectionDivider"></div>
 
 	<!--Contact-->
-	<table id="contact" cellpadding="15" cellspacing="0">
+	<table id="contact">
 		<tr>
 			<td colspan="2">
 				<h3 id="sectionTitle">Contact Me</h3>
@@ -229,7 +235,7 @@
 
 							<td width="25%" align="left">
 								<input name="name" type="text"
-									   size="25%" required />
+									   required />
 							</td>
 
 							<td width="30%"></td>
@@ -243,7 +249,7 @@
 
 							<td width="25%" align="left">
 								<input name="email" type="email"
-									   size="25%" required />
+									    required />
 							</td>
 
 							<td width="30%"></td>
