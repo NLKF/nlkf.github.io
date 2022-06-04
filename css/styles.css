@@ -41,6 +41,16 @@ button {
     color: #64FFDA;
     font-size: 20px;
 }
+
+table, tr{
+    border-spacing: 0px;
+    padding: 0px;
+}
+
+td{
+    align-content: center;
+    align-items: center;
+}
 /*#endregion Specific Types*/
 
 /*#region Ids*/
@@ -119,4 +129,40 @@ button {
     color: white;
 }
 
+.navigation {
+    background-color: #0A192F;
+    width: 5%;
+    border-spacing: 0px;
+    vertical-align: middle;
+    text-align: center;
+    color: #64FFDA;
+    font-size: 30px;
+}
+
+.contentCenter {
+    background-color: #0A192F;
+    padding: 0px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.hide{
+    visibility: collapse;
+}
+
+.show {
+    visibility: visible;
+}
+
 /*#endregion Classes*/
+
+
+.titleOverlay {
+    position: absolute;
+    z-index: 100;
+    vertical-align: middle;
+    color: #CCD6F6;
+    font-size: 60px;
+    text-align: center;
+    width: 100%
+}
