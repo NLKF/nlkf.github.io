@@ -3,12 +3,11 @@ window.onload = function () {
 };
 
 function init() {
-    window.onscroll = function () { addStatic() };
     hideAllSections();
     showSection(aboutSectionId);
 }
 
-const staticClass = "static";
+const staticHeaderClass = "staticTop";
 const aboutSectionId = "home";
 const skillsSectionId = "skills";
 const projectsSectionId = "projects";
@@ -16,14 +15,6 @@ const contactSectionId = "contact";
 const maxTabs = 4;
 
 var currentTab = 1;
-
-function addStatic() {
-    var header = document.getElementById("header");
-    if (window.pageYOffset > header.offsetTop)
-        header.classList.add(staticClass);
-    else
-        header.classList.remove(staticClass);
-};
 
 //#region Hide & Display
 
@@ -34,7 +25,7 @@ function hideSection(id) {
 
 function showSection(id) {
     var element = document.getElementById(id);
-    element.style.display = "block";
+    element.style.display = "table";
 }
 
 function hideAllSections() {

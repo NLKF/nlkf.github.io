@@ -51,6 +51,16 @@ td{
     align-content: center;
     align-items: center;
 }
+
+html, body{
+    min-height: 100%;
+}
+
+body {
+    background-color: #0A192F;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 /*#endregion Specific Types*/
 
 /*#region Ids*/
@@ -115,9 +125,14 @@ td{
     background-color: #0A192F;
 }
 
-.static {
+.staticTop {
     position: fixed;
     top: 0;
+}
+
+.staticBottom {
+    position: fixed;
+    bottom: 0;
 }
 
 .navBarOptions {
@@ -132,11 +147,13 @@ td{
 .navigation {
     background-color: #0A192F;
     width: 5%;
+    height: 85%;
     border-spacing: 0px;
     vertical-align: middle;
     text-align: center;
     color: #64FFDA;
     font-size: 30px;
+    position: fixed;
 }
 
 .contentCenter {

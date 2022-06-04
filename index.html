@@ -14,7 +14,7 @@
 
 <body style="margin: 0px; font-family:Garamond">
 	<!--Header-->
-	<table class="header" id="header">
+	<table class="header staticTop" id="header">
 		<tbody>
 			<tr>
 				<td></td>
@@ -68,23 +68,22 @@
 		</tbody>
 		<tbody>
 			<tr >
-				<td class="edgeDivider" colspan="10">
-				</td>
+				<td class="edgeDivider" colspan="10"></td>
 			</tr>
 		</tbody>
 	</table>
 
-	<table width="100%" height="100%">
+	<table width="100%" height="100%" style="margin: auto;">
 		<tr>
 			<td class="navigation">
 				<button style="padding: 0; border: none; width: 100%; height: 100%;" 
-						onclick="prevTab();">
+						onclick="prevTab(); left: 0;">
 					<strong><</strong>
 				</button>
 			</td>
 			<td width="90%" class="contentCenter" align="center">
 				<!--Home-->
-				<table id="home" class="section" style="padding: 0px;">
+				<table id="home" class="section">
 					<tr>
 						<td colspan="2">
 							<h3 class="sectionTitle">About Me</h3>
@@ -92,7 +91,7 @@
 						</td>
 					</tr>
 					<tr>
-						<td width="40%" style="padding: 100px;">
+						<td width="40%" style="padding: 75px;">
 							<img src="Assets/profilePicture.jpeg" alt="profile picture">
 						</td>
 						<td width="60%">
@@ -127,7 +126,7 @@
 				</table>
 
 				<!--Development Skills-->
-				<table id="skills" class="section" style="padding: 0px;">
+				<table id="skills" class="section">
 					<tr>
 						<td colspan="2">
 							<h3 class="sectionTitle">Development Skills</h3>
@@ -136,8 +135,8 @@
 					</tr>
 					<tr height="25"></tr>
 					<tr>
-						<td align="center">
-							<table width="90%" style="margin: 0px">
+						<td width="100%">
+							<table style="margin: auto;">
 								<thead color="white">
 									<tr style="padding: 10px;">
 										<th width="30%">Frameworks</th>
@@ -287,10 +286,11 @@
 		</tr>
 	</table>
 
-	<div class="edgeDivider"></div>
-
 	<!--Footer-->
-	<table class="footer">
+	<table class="footer staticBottom">
+		<tr>
+			<td class="edgeDivider"></td>
+		</tr>
 		<tr>
 			<td width="80%" valign="top">
 				<strong>Inspiration:</strong>
@@ -308,7 +308,7 @@
 				<strong style="color: #64FFDA">            |          </strong>
 				<span>
 					<strong>Colours:</strong>
-					<a href="https://chandrikadeb7.github.io/#contact" 
+					<a href="https://chandrikadeb7.github.io/#contact"
 					   style="color: #64FFDA">
 						Chandrika Deb
 					</a>
