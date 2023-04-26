@@ -142,6 +142,7 @@ body {
 
 .navBarOptions:hover{
     color: white;
+    cursor: default;
 }
 
 .navigation {
