@@ -5,6 +5,7 @@ window.onload = function () {
 function init() {
     hideAllSections();
     showSection(aboutSectionId);
+    setActiveHeader(aboutHeader);
 }
 
 const staticHeaderClass = "staticTop";
@@ -12,6 +13,10 @@ const aboutSectionId = "home";
 const skillsSectionId = "skills";
 const projectsSectionId = "projects";
 const contactSectionId = "contact";
+const aboutHeader = "aboutTab";
+const skillsHeader = "skillsTab";
+const projectsHeader = "projectsTab";
+const contactHeader = "contactTab";
 const maxTabs = 4;
 
 var currentTab = 1;
@@ -26,6 +31,22 @@ function hideSection(id) {
 function showSection(id) {
     var element = document.getElementById(id);
     element.style.display = "table";
+}
+
+function setActiveHeader(id) {
+    var element = document.getElementById(id);
+    element.classList.add("active");
+}
+
+function resetHeader(id) {
+    var element = document.getElementById(id);
+    element.classList.remove("active");
+}
+
+function resetAllHeaders() {
+    const headers = [aboutHeader, skillsHeader, projectsHeader, contactHeader];
+
+    headers.forEach(x => resetHeader(x));
 }
 
 function hideAllSections() {
@@ -58,27 +79,34 @@ function prevTab() {
 }
 
 function changeTab(tab) {
+    var id = null;
+    var header = null;
     switch (tab) {
         case 1:
-            hideAllSections();
-            showSection(aboutSectionId);
+            id = aboutSectionId;
+            header = aboutHeader;
             break;
         case 2:
-            hideAllSections();
-            showSection(skillsSectionId);
+            id = skillsSectionId;
+            header = skillsHeader;
             break;
         case 3:
-            hideAllSections();
-            showSection(projectsSectionId);
+            id = projectsSectionId;
+            header = projectsHeader;
             break;
         case 4:
-            hideAllSections();
-            showSection(contactSectionId);
+            header = contactHeader;
+            id = contactSectionId;
             break;
 
         default:
             break;
     }
+
+    hideAllSections();
+    showSection(id);
+    resetAllHeaders();
+    setActiveHeader(header);
 }
 
 //#endregion Navigation

@@ -145,6 +145,10 @@ body {
     cursor: default;
 }
 
+.active {
+    color: #64FFDA;
+}
+
 .navigation {
     background-color: #0A192F;
     width: 5%;
@@ -184,3 +188,5 @@ body {
     text-align: center;
     width: 100%
 }
+
+.tab
