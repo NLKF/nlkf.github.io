@@ -130,11 +130,6 @@ body {
     top: 0;
 }
 
-.staticBottom {
-    position: fixed;
-    bottom: 0;
-}
-
 .navBarOptions {
     font-size: 30px;
     color: #8892B0;
@@ -188,5 +183,3 @@ body {
     text-align: center;
     width: 100%
 }
-
-.tab
