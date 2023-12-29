@@ -10,5 +10,6 @@ The following information are available:
 
 Future plans to portfolio improvement:
 - Utilise a frontend framework to improve design and user experience
+- Display working experiences
 - Add developed projects to portfolio
 - Add animations
